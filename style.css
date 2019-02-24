@@ -85,3 +85,10 @@ a:hover {
 textarea {
     width: 80%;
 }
+
+canvas {
+    float: right;
+    width: 50%;
+    border: 1px solid black;
+    background-color: white;
+}

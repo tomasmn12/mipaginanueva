@@ -12,7 +12,7 @@
 <body>
 	<h1>La pagina de Tomas</h1>
 	<p>Wolverine, dirigida por: James Mangold</p>
-	
+
 	<section>
 		<article>
 			<table>
@@ -58,6 +58,8 @@
 		</article>
 
 		<article class="tabla">
+			<canvas></canvas>
+
 			<table>
 				<caption>Actores principales</caption>
 				<thead>
@@ -109,6 +111,38 @@
 		<a class="leermas" href="contacto.html">Conocer mas sobre Wolverine</a>
 	</article>
 	<footer>Copiright © 2018-Desarrollado por Tomás Munilla</footer>
+
+	<script>
+		const c = document.querySelector('canvas');
+		const ctx = c.getContext('2d');
+		const w = c.width;
+		const h = c.height;
+		let start;
+
+		function anim(timestamp) {
+			if (!start) start = timestamp;
+			var progress = timestamp - start;
+
+            const r = Math.trunc(Math.random() * 255);
+			const g = Math.trunc(Math.random() * 255);
+			const b = Math.trunc(Math.random() * 255);
+			ctx.strokeStyle = "rgb(" + r + "," + g + "," + b +")";
+
+			const x0 = Math.trunc(Math.random() * w);
+			const x1 = Math.trunc(Math.random() * w);
+
+			const y0 = Math.trunc(Math.random() * h);
+			const y1 = Math.trunc(Math.random() * h);
+
+			ctx.moveTo(x0, y0);
+			ctx.lineTo(x1, y1);
+			ctx.stroke();
+
+			window.requestAnimationFrame(anim);
+		}
+
+		window.requestAnimationFrame(anim);
+	</script>
 </body>
 
 </html>
