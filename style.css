@@ -1,0 +1,87 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("./img/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 35px
+}
+
+article {
+    margin: 1em;
+    padding: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    background: #444;
+    color: #ff0000;
+}
+
+td {
+    border: 1px solid #ccc;
+}
+
+td, th {
+    text-align: center;
+    padding: 0.5em;
+    border: 2px solid black;
+}
+
+.s1 {
+    padding: 15px;
+    border: 5px solid;
+    color: rgb(0, 0, 0);
+    background-color: rgba(151, 255, 0, 0.3);
+    bottom: 250px;
+}
+
+.s2 {
+    padding: 15px;
+    border: 5px solid;
+    color: rgb(255, 100, 0);
+}
+
+.a1 {
+    padding: 15px;
+    border: 5px solid;
+    color: rgb(255, 100, 0);
+}
+
+.tabla {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: green;
+}
+
+.leermas {
+    bottom: 70px;
+    font-size: 25px;
+    color: rgba(0, 250, 255);
+}
+
+.wikiwolv {
+    font-size: 20px;
+    top: 20px;
+    background-color: rgba(151, 255, 0, 0.3);
+    color: black;
+}
+
+.p1 {
+    font-size: 20px
+}
+
+textarea {
+    width: 80%;
+}
